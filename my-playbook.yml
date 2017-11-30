@@ -1,6 +1,6 @@
 ---
-- name: Hello Adarsha
+- name: Hello World
   hosts: all 
   tasks:
     - name: Say Hello
-      shell: echo "Hello Adarsha!"
+      shell: echo "Hello World"
