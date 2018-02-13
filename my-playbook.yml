@@ -4,12 +4,3 @@
   tasks:
     - name: Say Hello
       shell: echo "Hello World"
-    - name: Gathering facts about Subnet
-      become: True
-      ec2_vpc_subnet_facts:
-        filters:
-          "tag:Name": sub-priv-2-eu-west-1-1a-s-sandbox-ddr
-        region: eu-west-1
-      register: sub_services_1a
-    - debug:
-        var=sub_services_1a
