@@ -6,3 +6,5 @@
       shell: echo "Hello World"
       
     - ec2_instance_facts:  
+      register: wow
+    - debug: var=wow  
